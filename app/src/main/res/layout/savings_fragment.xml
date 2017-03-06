@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tr_card"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/tr_card_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <ImageButton
+            android:id="@+id/im_tr_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingLeft="80dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_done_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lunch"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/lunch_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <ImageButton
+            android:id="@+id/im_lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:src="@drawable/ic_done_black_24dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cafeteria_points"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/cafeteria_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <ImageButton
+            android:id="@+id/im_cafeteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:background="@null"
+            android:src="@drawable/ic_done_black_24dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:hint="@string/input_lunch_cafeteria"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="26dp"
+        android:windowSoftInputMode="adjustResize"
+        android:textAlignment="center"
+        android:id="@+id/spentMoney" />
+
+    <Button
+        android:text="@string/lunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtractLunch"
+        android:layout_marginTop="48dp"
+        />
+
+    <Button
+        android:text="@string/shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtractShopping"
+        android:layout_marginTop="48dp" />
+
+
+</LinearLayout>
